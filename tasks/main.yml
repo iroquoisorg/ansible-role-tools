@@ -15,6 +15,7 @@
     - software-properties-common
     - htop
     - atop
+    - ncdu
     - build-essential
     - python-dev
     - python-pip
@@ -33,17 +34,13 @@
 
 - name: Upgrade setuptools
   pip:
-    name: setuptools
+    name: setuptools==44.0.0
     state: latest
 
 - name: Upgrade pip
   pip:
     name: pip
     state: latest
-
-- name: Install Glances monitoring tool
-  pip:
-    name: Glances
 
 - name: Install extra python packages
   pip:
