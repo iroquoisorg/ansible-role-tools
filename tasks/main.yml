@@ -34,8 +34,8 @@
 
 - name: Upgrade setuptools
   pip:
-    name: setuptools
-    state: v45.0.0
+    name: setuptools==44.0.0
+    state: latest
 
 - name: Upgrade pip
   pip:
